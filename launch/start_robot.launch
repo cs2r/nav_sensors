@@ -1,0 +1,7 @@
+<launch>
+	<group>
+		<machine name="turtlebot3" address="192.168.0.110" env-loader="/opt/ros/kinetic/env.sh" user="waffle" password="g108" default="true"/>
+		<include file="$(find turtlebot3_bringup)/launch/turtlebot3_core.launch"/>
+  		<include file="$(find turtlebot3_bringup)/launch/turtlebot3_lidar.launch"/>
+	</group>
+</launch>
